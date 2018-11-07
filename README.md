@@ -34,6 +34,9 @@ docker-compose run -v <path-to-testscripts-folder>:/scripts k6 run /scripts/<tes
 
 # For example, if all your test scripts are in a folder /Users/murali/scripts and would like to run hello-world.js, run as following:
 docker-compose run -v /Users/murali/scripts:/scripts k6 run /scripts/hello-world.js
+# On windows, the syntax is slightly different to specify the volume path.
+# For example if your scripts are in c:/Users/murali/scripts
+docker run -i -v //c/Users/murali/scripts:/scripts k6 run /scripts/hello-world.js
 ```
 
 ### Watch test results on Dashboard
