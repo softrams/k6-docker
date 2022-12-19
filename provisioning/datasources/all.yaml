@@ -1,0 +1,10 @@
+datasources:
+-  access: 'proxy'
+   editable: true
+   is_default: true
+   name: 'myinfluxdb'
+   org_id: 1
+   type: 'influxdb'
+   url: 'http://influxdb:8086'
+   database: 'k6'
+   version: 1

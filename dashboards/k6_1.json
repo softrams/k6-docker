@@ -1,14 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_MYINFLUXDB",
-      "label": "myinfluxdb",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "influxdb",
-      "pluginName": "InfluxDB"
-    }
-  ],
   "__requires": [
     {
       "type": "grafana",
@@ -81,7 +71,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "fill": 1,
       "gridPos": {
         "h": 7,
@@ -198,7 +188,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "fill": 1,
       "gridPos": {
         "h": 7,
@@ -316,7 +306,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "fill": 1,
       "gridPos": {
         "h": 7,
@@ -438,7 +428,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "fill": 1,
       "gridPos": {
         "h": 7,
@@ -584,7 +574,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -698,7 +688,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -812,7 +802,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -926,7 +916,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -1040,7 +1030,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -1154,7 +1144,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "decimals": 2,
       "format": "ms",
       "gauge": {
@@ -1264,7 +1254,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "description": "Grouped by 1 sec intervals",
       "fill": 1,
       "gridPos": {
@@ -1517,7 +1507,7 @@
         "mode": "spectrum"
       },
       "dataFormat": "timeseries",
-      "datasource": "${DS_MYINFLUXDB}",
+      "datasource": "myinfluxdb",
       "gridPos": {
         "h": 7,
         "w": 12,
@@ -1684,7 +1674,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
@@ -1713,7 +1703,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "k6 Load Testing Results",
+  "title": "k6 Load Testing Results 1",
   "uid": "aFVFWKamz",
   "version": 1
 }

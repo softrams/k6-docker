@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile.influxdb
     ports:
       - '8086:8086'
+    volumes:
+      - ./volumes/influxdb:/var/lib/influxdb
   grafana:
     build:
       context: .
@@ -13,9 +15,10 @@ services:
     links:
       - influxdb
     environment:
-      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
-      - GF_AUTH_ANONYMOUS_ENABLED=true
-      - GF_AUTH_BASIC_ENABLED=false
+      GF_AUTH_ANONYMOUS_ORG_ROLE: "Admin"
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_BASIC_ENABLED: "false"
+      GF_INSTALL_PLUGINS: "blackmirror1-singlestat-math-panel"
     ports:
       - '3000:3000'
   k6:
